@@ -5,7 +5,7 @@
  *    Description: 
  *        Version: 1.0
  *        Created: 08/22/2014 01:34:53 PM
- *  Last Modified: 02/25/2015 09:39:03 AM
+ *  Last Modified: 02/25/2015 10:16:45 AM
  *       Compiler: gcc
  *
  *         Author: Wei Zheng
@@ -98,7 +98,7 @@ bool measure(string s, int & n, vector<int> & vStr, int* Spin){
             neel_squa=3*neel_squa/double(ns*ns);
         }
         if("CBC"==s){
-            if(1==alpha%2){  //note that unit cell along x direction has been doubled and may cause something wrong
+            if(0==((num_dx-num_dy)/2)%2){  //note that unit cell along x direction has been doubled and may cause something wrong
                 for(int y=0; y<num_dy; y++){
                     for(int x=(num_dx-num_dy)/2; x<(num_dx/2-num_dy/2+num_dy); x++){
                         int j=search(s, x, y);
