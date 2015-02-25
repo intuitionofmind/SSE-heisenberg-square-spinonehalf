@@ -5,7 +5,7 @@
  *    Description: 
  *        Version: 1.0
  *        Created: 08/22/2014 01:58:50 PM
- *  Last Modified: 09/22/2014 11:03:59 PM
+ *  Last Modified: 01/11/2015 02:47:30 PM
  *       Compiler: gcc
  *
  *         Author: Wei Zheng
@@ -15,17 +15,16 @@
  * =====================================================================================
  */
 
-const int alpha = 1;
-const int num_dy = 4;
+const int alpha=3;
+const int num_dy=12;
 const int num_dx = alpha*num_dy;
 const int num_leg = 4;
 const int num_ope = 2;
-const int num_thermal = 5000;
-const int num_sample = 10000;
-const int num_interval = 5;
-const int par_cutoff = 3;
+const int num_thermal = 10000;
+const int num_sample=1000000;
+const int num_interval=1;
+const int par_cutoff=1;
 const int termination = 10000;
-const double beta = 40.0;
+const double beta=36.0;
 const double J = 1.0;
-const double g = 1.0;
-
+const double g = 0.410;
